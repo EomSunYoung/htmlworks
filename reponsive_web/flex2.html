@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>플렉스 예제</title>
+    <style>
+        .container{
+            width: 800px;
+            border: 1px solid #000;
+            background-color: #eee;
+            display: flex;
+            /* flex-direction: row; */
+            /* row : 주축이 왼쪽에서 오른쪽이 기본 */
+            /* flex-direction: row-reverse; */
+            /* row-reverse : 주축이 오른쪽에서 왼쪽으로 바뀜, 순서도 오른쪽에서 왼쪽 */
+            flex-direction: column;
+            /* column : 주축이 위에서 아래로 바뀜 */
+            /* flex-direction: column-reverse; */
+            /* column-reverse : 주축이 아래에서 위로 바뀜 */
+        }
+        .box{
+            width: 80px;
+            background-color: #000;
+            margin: 5px;
+            padding: 5px 10px;
+        }
+        p{
+            color: #fff;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"><p>1</p></div>
+        <div class="box"><p>2</p></div>
+        <div class="box"><p>3</p></div>
+        <div class="box"><p>4</p></div>
+        <div class="box"><p>5</p></div>
+        <div class="box"><p>6</p></div>
+    </div>
+</body>
+</html>
